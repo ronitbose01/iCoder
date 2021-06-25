@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Contact Us - iCoder</title>
+    <link rel="Icon" href="WebsiteData/Icons/fav-icon.ico">
+    <link href="/CSS/contact.css" rel="stylesheet" <!-- Bootstrap CSS -->
+    <link href="/CSS/Bootstrap/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+    <script src="JAVA/Bootstrap/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e9ecef;">
+        <div class="container-fluid">
+            <img src="WebsiteData/Icons/icoder.svg" alt="WebsiteIcon" width="30" height="24"
+                class="d-inline-block align-text-top">
+            <a class="navbar-brand" href="/">iCoder</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="/">Home</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Course
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Web Development Course.</a></li>
+                            <li><a class="dropdown-item" href="#">Python Programming Course.</a></li>
+                            <li><a class="dropdown-item" href="#">C Programming Course.</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <a class="dropdown-item" href="#">Support Us.</a>
+                    </li>
+                    <a class="dropdown-item" href="#">Write For Us.</a></li>
+                </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/blog.html">Blog.</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="/contact.html">Contact Us.</a>
+                </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-primary" type="submit">Search</button>
+                </form>
+                <div class="mx-2">
+                    <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+                    <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#signupModal">SignUp</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!--Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Login To iCoder!!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email Address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                placeholder="Enter your Email" aria-describedby="emailHelp">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                                else.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" placeholder="Enter your password"
+                                id="exampleInputPassword1">
+                        </div>
+                        <br>
+                        <button type="submit" class="btn btn-primary">Login</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--SignUp Modal -->
+    <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">SignUp For An iCoder Acccout!!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email Address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                        </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Confirm Email Address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp">
+                                <small id="emailHelp" class="form-text text-muted">We'll never share your email with
+                                    anyone else.</small>
+                            </div>
+                            <hr>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Choose a Password (At least 4 characters)</label>
+                                <input type="password" class="form-control" placeholder="Choose a password"
+                                    id="exampleInputPassword1">
+                            </div>
+                            <br>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Retype your Password</label>
+                                <input type="password" class="form-control" placeholder="Retype your password"
+                                    id="exampleInputPassword1">
+                            </div>
+                            <br>
+                            <button type="submit" class="btn btn-primary">SignUp</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container contact-form">
+        <div class="contact-image">
+            <img src="WebsiteData/Contact/Contact.png" alt="contact" />
+        </div>
+        <form method="post">
+            <h3>Drop Us Your Message</h3>
+            <center>
+                <div class="my-1"></div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <input type="text" name="txtName" class="form-control" placeholder="Your Name *" value="" />
+                        <hr>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="txtEmail" class="form-control" placeholder="Your Email *" value="" />
+                        <hr>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="txtPhone" class="form-control" placeholder="Your Phone Number *"
+                            value="" />
+                        <hr>
+                    </div>
+
+                </div>
+                <div class="col-md-5">
+                    <div class="form-group">
+                        <textarea name="txtMsg" class="form-control" placeholder="Your Message *"
+                            style="width: 100%; height: 150px;"></textarea>
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <input type="submit" name="btnSubmit" class="btnContact" value="Send Message" />
+                    </div>
+                </div>
+    </div>
+    </form>
+    </div>
+    </center>
+
+    <footer class="container-fluid bg-dark my-0 py-3 text-light">
+        <p class="mb-0 text-center">Copyright © 2020-2021 iCoder.com, Inc</p>
+    </footer>
+</body>
+
+</html>
